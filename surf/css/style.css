@@ -1,0 +1,385 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a,li,button
+{
+    text-decoration: none;
+    outline: none;
+    list-style: none;
+}
+body
+{
+    font-family: 'Lato', sans-serif;
+}
+/*
+font-family: 'Lato', sans-serif;
+font-family: 'Playfair Display', serif; 
+*/
+.nav_wrapper
+{
+    width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-top: 5vh;
+    margin-bottom: 100px;
+}
+.nav_item
+{
+    color: black;
+    color:#aaaaaa;
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+    transition: all ease-in-out .5s;
+    margin-right: 70px;
+    
+}
+
+
+.nav_item:last-child
+{
+    margin-right: 0;
+}
+.nav_item:hover
+{
+    color: black;
+}
+.nav_active
+{
+    color: black
+    !important;
+}
+
+
+
+.header_wrapper
+{
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 200px;
+}
+.header_title{
+    color: #000000;
+    font-family: "Playfair Display";
+    font-size: 60px;
+    font-weight: 400;
+    /* Text style for "Long Beach" */
+    letter-spacing: 0.57px;
+    text-align: center;
+}
+.header_descr
+{
+    color: #999999;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    /* Text style for "Lorem ipsu" */
+    letter-spacing: 0.06px;
+    text-align: center;
+    width: 584px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 165px;
+}
+
+.header_content
+{
+    display: flex;
+    justify-content: space-between;
+
+}
+.rewiews
+{
+    width: 260px;
+}
+.rewiew_item
+{
+    margin-bottom: 45px;
+    position: relative;
+}
+.rewiew_item::before
+{
+    content: "";
+    width: 36px;
+    display: block;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    left: -18px;
+    z-index: -1;
+    background-image: url("/img/“.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.rewiews_title
+{
+    color: #000000;
+    font-family: "Playfair Display",serif;
+    font-size: 36px;
+    font-weight: 400;
+    letter-spacing: 0.29px;
+    margin-bottom: 45px;
+}
+
+.rewiew_item_text
+{
+    color: #999999;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 31px;
+}
+.rewiew_item_author
+{
+    color: #000000;
+    font-size: 16px;
+    font-weight: 900;
+    line-height: 31px;
+    border-bottom: 1px solid #e7e7e7;
+    padding: 5px 0 7px 0;
+}
+
+
+.video
+{
+    width: 280px;;
+}
+
+
+.video_title
+{
+    color: #000000;
+    font-family: "Playfair Display",serif;
+    font-size: 36px;
+    font-weight: 400;
+    letter-spacing: 0.29px;
+    margin-bottom: 45px;
+    margin-bottom: 25px;
+}
+
+.play_icon
+{
+    width: 56px;
+    height: 56px;
+    background-color:#fff;
+    border-radius: 50px;
+    position: relative;
+}
+.play_icon::before
+{   position: absolute;
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 5.5px solid transparent;
+    border-left: 8px solid black;
+    border-bottom: 5.5px solid transparent;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    
+}
+
+.video_item
+{
+    position: relative;
+    margin-top: 30px;
+}
+.video_item .play_icon
+{
+    position: absolute;
+    left: -6px;
+    bottom: -7px;
+    z-index: 1;
+    transition: all .5s ease;
+}
+.video_item .play_icon:hover
+{
+    box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Параметры тени */
+}
+
+
+.center_img
+{
+    max-width: 530px;
+    max-height: 330px;
+}
+.video_center
+{
+    position: relative;
+    max-height: 330px;
+    padding-top: 35px;
+}
+.video_center .play_icon
+{
+    position: absolute;
+    left: -8px;
+    bottom: -45px;
+    transition: all .5s ease;
+}
+.video_center .play_icon:hover
+{
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+
+
+
+
+.container
+{
+    width: 1050px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.instructor_wrapper
+{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 250px;
+}
+.header-1
+{
+    color: #000000;
+    font-family: "Playfair Display",serif;
+    font-size: 50px;
+    font-weight: 400;
+    /* Text style for "Popular In" */
+    letter-spacing: 0.41px;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 85px;
+}
+.instructor_name
+{
+    color: #000000;
+    font-family: "Playfair Display",serif;
+    font-size: 30px;
+    font-weight: 400;
+    /* Text style for "S, imon Ad" */
+    letter-spacing: 0.28px;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.instructor_students
+{
+    color: #2ab738;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 87.93px;
+    /* Text style for "4,350 stud" */
+    letter-spacing: 0.14px;
+    text-align: center;
+}
+
+
+
+.user_item_one
+{
+    display: flex;
+    margin-bottom:190px;
+}
+.user_descr
+{
+    margin-left: 70px;
+}
+
+.user_title
+{
+    color: #000000;
+    font-family: "Playfair Display", serif;
+    font-size: 35px;
+    font-weight: 500;
+    font-style: italic;
+    /* Text style for "Lipsum cou" */
+    letter-spacing: 0.33px;
+    margin-bottom: 30px;
+    
+}
+.user_info
+{
+    color: #444444;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 31px;
+    /* Text style for "Lorem ipsu" */
+    letter-spacing: 0.06px;
+    margin-bottom: 55px;
+    
+}
+.user_btn
+{
+    width: 141px;
+    height: 52px;
+    border: 1px solid #e5e5e5;
+    color: #000000;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 31px;
+    /* Text style for "R, ead Mor" */
+    letter-spacing: 0.06px;
+    padding: 14px 32px 14px 32px;
+    transition: all .5s ease;
+    
+}
+
+.user_item_two
+{
+    display: flex;
+    margin-bottom: 260px;
+}
+
+.user_item_two .user_descr
+{
+    margin-right: 60px;
+}
+
+.container h1 
+{
+    color: #000000;
+    font-family: "Playfair Display";
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 100px;
+    /* Text style for "Aren’t you" */
+    letter-spacing: 0.41px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.enroll_btn
+{
+    text-align: center;
+    padding: 15px 25px 10px 25px;
+    width: 180px;
+    height: 56px;
+    border: 1px solid #41475b;
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 18px;
+    font-weight: 600;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 150px;
+}
+
+.footer
+{
+    padding-top: 50px;
+    padding-bottom: 40px;
+}
+.auth
+{
+    text-align: center;
+    font-size: 20px;
+}
